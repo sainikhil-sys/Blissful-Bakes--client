@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+
+# Keep the original page URL working
+[[redirects]]
+  from = "/blissful-bakes-hyderabad.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/blissful-bakes-hyderabad"
+  to = "/"
+  status = 301
