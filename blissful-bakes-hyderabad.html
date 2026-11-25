@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blissful Bakes by Preeti — Custom Cakes in Kukatpally, Hyderabad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --bg:#fff8f4; --ink:#3b1f2b; --muted:#7a5c66; --accent:#d6336c; --accent2:#ffe8ef; --card:#ffffff; }
+* { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+h1,h2,h3 { font-family:'Playfair Display',Georgia,serif; line-height:1.15; }
+a { color:inherit; }
+.demo { background:#111; color:#fff; font-size:13px; text-align:center; padding:8px 12px; }
+.demo b { color:#ffd54a; }
+nav { position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid color-mix(in srgb, var(--ink) 10%, transparent); }
+nav .wrap { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; }
+.logo { font-family:'Playfair Display',Georgia,serif; font-size:22px; font-weight:700; text-decoration:none; }
+nav ul { display:flex; gap:22px; list-style:none; font-size:15px; }
+nav ul a { text-decoration:none; color:var(--muted); }
+nav ul a:hover { color:var(--accent); }
+.wrap { max-width:1080px; margin:0 auto; }
+.hero { padding:84px 20px 72px; background:radial-gradient(circle at 85% 20%, #ffd6e3 0, transparent 45%), #fff8f4; }
+.hero .wrap { display:grid; grid-template-columns:1.2fr .8fr; gap:40px; align-items:center; }
+.eyebrow { display:inline-block; font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:14px; }
+.hero h1 { font-size:clamp(36px,6vw,60px); margin-bottom:18px; }
+.hero p { font-size:18px; color:var(--muted); max-width:520px; margin-bottom:28px; }
+.btns { display:flex; gap:12px; flex-wrap:wrap; }
+.btn { display:inline-flex; align-items:center; gap:8px; padding:14px 22px; border-radius:999px; font-weight:600; text-decoration:none; font-size:15px; }
+.btn.primary { background:var(--accent); color:#fff; }
+.btn.ghost { border:2px solid var(--ink); }
+.badge { background:var(--card); border-radius:24px; padding:30px; box-shadow:0 20px 50px rgba(0,0,0,.08); text-align:center; }
+.badge .big { font-size:64px; font-weight:700; font-family:'Playfair Display',Georgia,serif; color:var(--accent); }
+.badge .stars { color:#f5a623; font-size:22px; letter-spacing:3px; }
+.badge small { display:block; color:var(--muted); margin-top:6px; }
+.badge .emoji { font-size:54px; margin-bottom:6px; }
+section { padding:72px 20px; }
+section h2 { font-size:clamp(28px,4vw,40px); margin-bottom:10px; }
+.sub { color:var(--muted); margin-bottom:36px; max-width:600px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+.card { background:var(--card); border-radius:18px; padding:26px; border:1px solid color-mix(in srgb, var(--ink) 8%, transparent); }
+.card .ic { font-size:32px; margin-bottom:10px; }
+.card h3 { font-size:20px; margin-bottom:6px; }
+.card p { color:var(--muted); font-size:15px; }
+.alt { background:var(--accent2); }
+.praise { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+.praise div { background:var(--card); border-radius:14px; padding:18px 20px; font-weight:500; border-left:4px solid var(--accent); }
+.info { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+.hours { width:100%; border-collapse:collapse; }
+.hours td { padding:8px 0; border-bottom:1px dashed color-mix(in srgb, var(--ink) 15%, transparent); }
+.hours td:last-child { text-align:right; color:var(--muted); }
+.map { border-radius:18px; overflow:hidden; min-height:260px; background:var(--card); }
+.map iframe { width:100%; height:100%; min-height:280px; border:0; }
+footer { padding:30px 20px; text-align:center; font-size:14px; color:var(--muted); }
+.wa { position:fixed; right:18px; bottom:18px; background:#25D366; color:#fff; border-radius:999px; padding:14px 20px; font-weight:600; text-decoration:none; box-shadow:0 10px 30px rgba(0,0,0,.2); z-index:20; }
+@media (max-width:760px) {
+  nav ul { display:none; }
+  .hero .wrap, .info { grid-template-columns:1fr; }
+  .hero { padding:56px 20px; }
+}
+</style>
+</head>
+<body>
+<div class="demo">✨ <b>Demo preview</b> made by Sai Nikhil for Blissful Bakes by Preeti — not the official website. Like it? Let's make it yours.</div>
+<nav><div class="wrap">
+  <a class="logo" href="#top">Blissful Bakes 🎂</a>
+  <ul><li><a href="#offer">Our bakes</a></li><li><a href="#why">Why us</a></li><li><a href="#visit">Visit</a></li></ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="eyebrow">Home bakery · KPHB, Kukatpally</span>
+    <h1>Custom cakes, made exactly the way you imagine.</h1>
+    <p>Birthday cakes, theme cakes and fresh bakes from a home bakery in Kukatpally — designed with you, step by step, and baked fresh for your celebration.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://wa.me/918056999889?text=Hi%21%20I%27d%20like%20to%20order%20a%20custom%20cake." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+      <a class="btn ghost" href="tel:+918056999889">📞 Call now</a>
+    </div>
+  </div>
+  <div class="badge">
+    <div class="emoji">🎂</div>
+    <div class="big">4.9</div>
+    <div class="stars">★★★★★</div>
+    <small>from 500+ Google reviews</small>
+  </div>
+</div></header>
+
+<section id="offer"><div class="wrap">
+  <h2>What we bake</h2>
+  <p class="sub">Tell us your theme, size and flavour — we'll design it with you.</p>
+  <div class="grid"><div class="card"><div class="ic">🎉</div><h3>Custom birthday cakes</h3><p>Theme cakes for kids and adults, designed around your idea — from number cakes to car and character themes.</p></div><div class="card"><div class="ic">🍰</div><h3>Minimal-fondant designs</h3><p>Prefer more cream and less fondant? Ask for it — we&#x27;ll keep the look and the taste.</p></div><div class="card"><div class="ic">🍪</div><h3>Ragi choco cookies</h3><p>A wholesome take on a favourite — great for gifting or tea time.</p></div><div class="card"><div class="ic">🥯</div><h3>Korean buns &amp; savouries</h3><p>Soft Korean cream-cheese buns, vada pav and more savoury bakes.</p></div></div>
+</div></section>
+
+<section class="alt" id="why"><div class="wrap">
+  <h2>What customers keep saying</h2>
+  <p class="sub">Common themes from 500+ reviews on Google.</p>
+  <div class="praise"><div>Cake turned out exactly as described</div><div>Fresh, delicious and beautifully detailed</div><div>Easy to talk to and checks in before baking</div><div>Delivered on time, hassle-free</div></div>
+</div></section>
+
+<section id="visit"><div class="wrap info">
+  <div>
+    <h2>Order & pickup</h2>
+    <p class="sub" style="margin-bottom:18px">📍 15-31-IVL-60/5, 4th Phase Rd, KPHB Colony Phase 4, Kukatpally, Hyderabad, Telangana 500085</p>
+    <table class="hours"><tr><td>Monday</td><td>9:30 AM – 6:00 PM</td></tr><tr><td>Tuesday</td><td>9:30 AM – 6:00 PM</td></tr><tr><td>Wednesday</td><td>9:30 AM – 6:00 PM</td></tr><tr><td>Thursday</td><td>9:30 AM – 6:00 PM</td></tr><tr><td>Friday</td><td>9:30 AM – 6:00 PM</td></tr><tr><td>Saturday</td><td>9:30 AM – 6:00 PM</td></tr><tr><td>Sunday</td><td>9:30 AM – 6:00 PM</td></tr></table>
+    <div class="btns" style="margin-top:24px">
+      <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Blissful%20Bakes%20by%20Preeti%2015-31-IVL-60/5%2C%204th%20Phase%20Rd%2C%20KPHB%20Colony%20Phase%204%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500085&query_place_id=ChIJc5r6ceeRyzsRym-Sm6C_gbs" target="_blank" rel="noopener">🗺️ Get directions</a>
+      <a class="btn ghost" href="tel:+918056999889">📞 +91 80569 99889</a>
+    </div>
+  </div>
+  <div class="map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Blissful%20Bakes%20by%20Preeti%2C%2015-31-IVL-60/5%2C%204th%20Phase%20Rd%2C%20KPHB%20Colony%20Phase%204%2C%20Kukatpally%2C%20Hyderabad%2C%20Telangana%20500085&output=embed" title="Map"></iframe></div>
+</div></section>
+
+<footer>© 2026 Blissful Bakes by Preeti · Kukatpally, Hyderabad · Website demo by Sai Nikhil</footer>
+<a class="wa" href="https://wa.me/918056999889?text=Hi%21%20I%27d%20like%20to%20order%20a%20custom%20cake." target="_blank" rel="noopener">💬 WhatsApp</a>
+</body>
+</html>
